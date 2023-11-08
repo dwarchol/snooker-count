@@ -1,0 +1,5 @@
+<mat-grid-list cols="3">
+    <mat-grid-tile><app-add-player (nameEvent)="setPlayer1Name($event)" [num]="player1.number"></app-add-player></mat-grid-tile>
+    <mat-grid-tile><button type="button" (click)="start()">START</button></mat-grid-tile>
+    <mat-grid-tile><app-add-player (nameEvent)="setPlayer2Name($event)" [num]="player2.number"></app-add-player></mat-grid-tile>
+  </mat-grid-list>
