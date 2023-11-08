@@ -1,0 +1,13 @@
+
+<div *ngIf="isEditable">
+    <p>PLAYER {{num}}</p>
+    <input matInput placeholder="Name" [(ngModel)]="name">
+    <p></p>
+    <button type="button" (click)="addPlayer(name)">CONFIRM</button>
+</div>
+<div *ngIf="!isEditable">
+    <p>PLAYER {{num}}</p>
+    <h1>{{name}}</h1>
+    <button type="button" (click)="edit()">EDIT</button>
+</div>
+
